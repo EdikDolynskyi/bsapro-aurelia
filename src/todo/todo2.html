@@ -1,0 +1,9 @@
+<template>
+	<!--<require from="./todo-form/todo-form"></require>-->
+	<require from="./todo-list/todo-list"></require>
+	<h2>${heading}</h2>
+	<div class="area-todo">
+		<!--<todo-form></todo-form>-->
+		<todo-list todos.bind="todos" on-delete-todo.call="deleteTodo(description, done)"></todo-list>
+	</div>
+</template>

@@ -1,0 +1,8 @@
+<template>
+	<require from="../todo-item/todo-item"></require>
+	<ul>
+		<li repeat.for="todo of todos">
+			<todo-item todo.bind="todo" on-delete-todo.call="deleteTodoAction(todo)"></todo-item>
+		</li>    
+	</ul>
+</template>
